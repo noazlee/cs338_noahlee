@@ -1,0 +1,4 @@
+Noah Lee '27
+
+My Kali installation is complete. I have never used Kali or used a virtual machine before - so I think I'd like to mess around and see what I can do with it.
+One thing that I really want to try is penetration testing - and I hear Kali can be used to do that.
