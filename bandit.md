@@ -14,3 +14,4 @@ Assignment 1 - Over the Wire's "Bandit" - Noah Lee - September 17th 2024
 * Level 10->11: base64 -d data.txt -> dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr -> learning how to recognise encrypted messages and finding ways to decrypt it.
 * Level 11->12: alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" -> cat data.txt | rot13 -> 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 -> created an alias decryption function to decrypt a substitution cypher.
 
+COMPLETED.
