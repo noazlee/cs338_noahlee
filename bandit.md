@@ -11,5 +11,6 @@ Assignment 1 - Over the Wire's "Bandit" - Noah Lee - September 17th 2024
 * Level 7->8: cat data.txt | grep "millionth" -> millionth	dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc -> using grep to find text in a txt file.
 * Level 8->9: sort data.txt | uniq -u 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM -> using the `sort` and `uniq` commands to filter text in a txt file.
 * Level 9->10: strings data.txt | grep "=" -> FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey -> using the `strings` command to find human readable lines in a text file.
-* Level 10->11: 
+* Level 10->11: base64 -d data.txt -> dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr -> learning how to recognise encrypted messages and finding ways to decrypt it.
+* Level 11->12: alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'" -> cat data.txt | rot13 -> 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 -> created an alias decryption function to decrypt a substitution cypher.
 
