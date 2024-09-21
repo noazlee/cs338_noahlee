@@ -23,9 +23,14 @@ The server sent the initial [FIN] packet - we can tell by looking at the packets
 
 ## ===== HTTP =====  
 1. How many TCP connections were opened? How can you tell?
-
+One. Only one TCP row exists when clicking on the HTTP request.
 
 2. Can you tell where my homepage (index.html) was requested?
-
+FULL REQUEST URI : http://cs338.jeffondich.com/index.html
 
 3. Can you tell where my photograph (jeff-square-colorado.jpg) was requested? 
+FULL REQUEST URI : http://cs338.jeffondich.com/jeff-square-colorado.jpg
+
+## ===== QUESTIONS =====  
+How do i filter out the junk in wireshark - I got over 600 records of connections - alot of it was [keep-alive] tcp packets - how do I see what is useful to me - or even know what would be useful to me?
+What does [PSH] do?
