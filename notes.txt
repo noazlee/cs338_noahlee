@@ -1,0 +1,25 @@
+What happens when I click a link in a browser?
+
+1. My browser gets the IP address associated with the link.
+2. My browser then sends a TCP request for handshake
+3. The link's server then authenticates the TCP request and sends an acknowledgement.
+4. My browser then acknowledges the connection.
+5. **** Encryption probably happens here (keys are sent) with TLS. BIG HANDSHAKE!!
+6. Sends a tcp packet containing:
+    GET /something/document.txt HTTP/2.0
+    Host: example.com
+    User-Agent:
+7. Server looks for resource, if it finds it or can construct it, server sends document back:
+    200 OK
+    Server: nginx/1.8.2
+    Date:
+    Content-Length:
+
+    [Contents of document.txt]
+8. Browser ACK for latest packets.
+9. Server sends a FIN unless client sends KEEP ALIVE.
+10. Browser shoes the contents of document.txt on screen. [If HTML file, browser would parse for tags and then initiate new GET requests for the documents]
+
+
+TCP Connection has unique ID 4-tuple
+    (client IP, client port, server IP, server port)
