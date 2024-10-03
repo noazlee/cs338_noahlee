@@ -53,7 +53,7 @@ Expected: version, modulus (n), publicExponent (e), privateExponent (d), prime1 
 - I pasted the private key into the decoder (without the start and end tags).
 - Hovering over the hexadecimal, I can see how the ASN is divided and represented - I can also convert the hexadecimal to get the decimal value of each component like the prime numbers.
 
-5.
+5. change offset - 4 base64 chars is 3 bytes
 1) SEQUENCE (9)
 Hex Value: 30 82 06 E4
 Offset: 0
@@ -95,7 +95,7 @@ Hex Value: 02 81 C0 51 65 36 2C C0 EF 29 97 6F 05 56 6F CC 93 81 44 18 AC B3 6D 
 Offset: 1573
 
 DER encoding: data type (colored blue on the tool) is at the front of the encoding. 30 (hex) represents 'SEQUENCE' and 02 (hex) represents integer.
-After the data type, the length of the value in bytes will be represented in be represented in hex - followed by the value of that object in hex. The name is not necessary as the variables are assumed to always be listed in the same order.
+After the data type, the length of the value in bytes will be represented in be represented in hex (not including the bytes before it) - followed by the value of that object in hex. The name is not necessary as the variables are assumed to always be listed in the same order.
 
 6.
 Public Key:
